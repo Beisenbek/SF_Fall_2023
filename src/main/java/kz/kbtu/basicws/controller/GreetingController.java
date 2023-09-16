@@ -32,4 +32,10 @@ public class GreetingController {
     public String print(@RequestParam String message) {
         return printerService.print(message);
     }
+    @GetMapping("/print2")
+    public String print2(@RequestParam String message) {
+        return printerService.print2(message);
+    }
+
 }
+
